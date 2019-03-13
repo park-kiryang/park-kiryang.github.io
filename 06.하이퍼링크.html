@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06.하이퍼링크</title>
+    <style>
+        p{height: 500px;}
+    </style>
+</head>
+<body>
+    
+<!-- 하이퍼링크(앵커==링크)는 외부나 내부로 이동할 때 사용한다. -->
+    <h1>1.일반적인 이동 (다른페이지로 이동)</h1>
+    <a href="http://www.w3schools.com">w3school사이트가기</a>
+    <a href="http://www.w3schools.com" target="_blank">w3school사이트가기(새창)</a>
+    <a href="http://www.w3schools.com" target="_self">w3school사이트가기(같은창 13번줄과 같은 의미)</a>
+
+
+    <a href="01.hello.html">01.hello.html로 이동</a>
+    <a href="../index.html">상위폴더에 있는 index 페이지로 이동</a>
+
+    <h1>2.텍스트가 아닌 이미지를 링크로 감싼경우</h1>
+    <a href="http://www.w3schools.com">
+        <img src="img/w3.jpg" alt="w3schools">
+    </a>
+
+    <h1>3.파일다운</h1>
+    <a href="img/w3.jpg">w3이미지</a>
+    <a href="test.zip">zip파일 다운받기</a>   
+    <!-- 브라우저마다 다르게 다운받아짐 crome-> 자동다운로드
+                                    익스플로어-> 새창으로 알집열림  -->
+    <a href="../HTML5&CSS3.pdf">pdf파일다운받기</a>
+
+    <h1 id="menu">4.내부에서 특정위치로 이동하기(스크롤이 발생되었을 경우 사용)</h1>
+        <!-- ul>li*6>a[href=#p$]{문단$}  ul안에 6개의 li 안의 a 태그 -->
+        <ul>
+            <li><a href="#p1">문단1</a></li>    <!-- #은 id를 가리킨다. -->
+            <li><a href="#p2">문단2</a></li>    <!-- 문단2를 클릭하면 id가 p2인 밑의 문단2로 내려간다. -->
+            <li><a href="#p3">문단3</a></li>    <!-- 문단3를 클릭하면 id가 p3인 밑의 문단3로 내려간다. -->
+            <li><a href="#p4">문단4</a></li>
+            <li><a href="#p5">문단5</a></li>
+            <li><a href="#p6">문단6</a></li>
+        </ul>
+        
+        <!-- p[id=p$]*6{문단$}   -->
+        <p id="p1">문단1 <a href="#menu">메뉴로 이동</a></p>    <!-- id값은 중복없음 / class는 중복사용가능 -->
+        <p id="p2">문단2 <a href="#menu">메뉴로 이동</a></p>    <!-- a태그의 ""를 비워두면 맨위로올라감 (새로고침의 의미) -->
+        <p id="p3">문단3 <a href="#menu">메뉴로 이동</a></p>
+        <p id="p4">문단4 <a href="#menu">메뉴로 이동</a></p>
+        <p id="p5">문단5 <a href="#menu">메뉴로 이동</a></p>
+        <p id="p6">문단6 <a href="#menu">메뉴로 이동</a></p>
+
+
+    <h1>5.프레임안의 내용을 변경</h1>
+    <!-- iframe의 name값과 a의 target값이 일치해야 내용변경가능. -->
+        <iframe src="05.텍스트.html" name="iframe_a" width="100%">
+            <p>Your browser does not support iframes.</p>  <!-- iframe 지원안하는 웹브라우저에 나오는 내용 -->
+        </iframe>
+        
+            <a href="https://www.daum.net" target="iframe_a">다음사이트로 변경</a>
+
+</body>
+</html>
