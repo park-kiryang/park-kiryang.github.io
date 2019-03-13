@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table, th, td{
+            border-collapse: collapse;
+            border: 1px solid #000;
+        }
+        table{
+            width:50%;
+            min-width: 600px;
+        }
+        th{
+            background: orange;
+            text-align: left;
+        }
+        th, td{
+            padding: 10px;
+        }
+        .center{text-align: center;}
+
+        /* .or{background-color: orange;} */
+        
+    </style>
+</head>
+<body>
+    <table>
+        <caption>이력서</caption>
+        <colgroup>
+            <col width="70px">
+            <col width="70px">
+            <col width="auto">
+            <col width="100px">
+        </colgroup>
+
+        <!-- 작성하기 -->
+
+        <tr>
+            <th colspan="2" rowspan="3" class="or">증명사진</th>
+            <td rowspan="3" class="center"><img src="img/woman.png" alt="남자사진"></td>
+            <th class="or">이름</th>
+            <td>홍길동</td>
+        </tr>
+        <tr>
+            <th class="or">생년월일</th>
+            <td>1980.01.01</td>
+        </tr>
+        <tr>
+            <th class="or">학력</th>
+            <td>대졸</td>
+        </tr>
+        <tr>
+            <th rowspan="2" class="or">연락처</th>
+            <th class="or">집</th>
+            <td colspan="3">02-1234-1234</td>
+        </tr>
+        <tr>
+            <th class="or">휴대폰</th>
+            <td colspan="3">010-1234-1234</td>
+        </tr>
+        <tr>
+            <th colspan="2" class="or">이메일</th>
+            <td colspan="3">hong@naver.com</td>
+        </tr>
+        <tr>
+                <th colspan="2" class="or">주소</th>
+                <td colspan="3">서울시 중구</td>
+        </tr>
+        <tr>
+                <th colspan="2" class="or">관심언어</th>
+                <td colspan="3">html, css</td>
+        </tr>
+        <tr>
+                <th colspan="2" class="or">취미/특기</th>
+                <td colspan="3">코딩하기</td>
+        </tr>
+        <tr>
+                <th colspan="2" class="or">기타</th>
+                <td colspan="3">반갑습니다.</td>
+        </tr>
+    </table>       
+
+</body>
+</html>

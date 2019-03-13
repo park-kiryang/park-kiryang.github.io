@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>09.테이블1</title>
+</head>
+<body>
+    <h1>표만들기 실습</h1>
+    <h2>1행 1열 표</h2>
+        <table border="1">
+            <tr>
+                <td>1-1</td>
+            </tr>
+        </table>
+
+    <h2>1행 2열 표</h2>
+        <table border="1">
+            <tr>
+                <td>1-1</td>
+                <td>1-2</td>
+            </tr>
+        </table>
+
+    <h2>2행 1열 표</h2>
+        <table border="1">
+            <tr>
+                <td>1-1</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+            </tr>
+        </table>
+
+        <!-- 시각장애인에게 읽어주는 프로그램때문에
+            thead -> tfoot -> tbody 가 중요한순서이기때문에 
+            티바디보다 중요한 합계가 주로 나오는 티풋을 먼저 작성해준다  -->
+
+
+    <h2>2행 2열 표</h2>
+        <table border="1">
+            <caption>2행 2열 표만들기</caption>
+                <colgroup>
+                    <col width="20%">
+                    <col width="80%"> 
+                </colgroup>
+
+            <thead>
+                <tr>
+                    <th>제목1</th>
+                    <th>제목2</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1-1</td>
+                    <td>1-2</td>
+                </tr>
+
+                <tr>
+                    <td>2-1</td>
+                    <td>2-2</td>
+                </tr>
+            </tbody>     
+
+            <tfoot>
+                <tr>
+                    <th colspan="2">바닥글</th>
+                </tr>
+            </tfoot>
+
+        </table>
+
+
+
+
+</body>
+</html>

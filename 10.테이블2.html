@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10.테이블2(셀합치기 연습)</title>
+</head>
+<body>
+    
+
+    <h1>셀을 합치는 실습</h1>
+    <h2>기본테이블</h2>
+    <table border="1">
+        <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+            <th>제목4</th>
+        </tr>
+
+        <tr>
+            <td>1-1</td>
+            <td>1-2</td>
+            <td>1-3</td>
+            <td>1-4</td>
+        </tr>
+
+        <tr>
+            <td>2-1</td>
+            <td>2-2</td>
+            <td>2-3</td>
+            <td>2-4</td>
+        </tr>
+
+        <tr> <!-- tr>td*4{3-$} -->
+            <td>3-1</td>
+            <td>3-2</td>
+            <td>3-3</td>
+            <td>3-4</td>
+        </tr>
+
+        <tr> <!-- tr>td*4{4-$} -->
+            <td>4-1</td>
+            <td>4-2</td>
+            <td>4-3</td>
+            <td>4-4</td>
+        </tr>
+    </table>
+
+    <h2>셀합치기(가로) colspan</h2>
+    <table border="1">
+        <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+            <th>제목4</th>
+        </tr>
+
+        <tr>
+            <td colspan="2">1-1</td>
+            <td>1-3</td>
+            <td>1-4</td>
+        </tr>
+
+        <tr>
+            <td>2-1</td>
+            <td colspan="3">2-2</td>
+        </tr>
+
+        <tr> <!-- tr>td*4{3-$} -->
+            <td>3-1</td>
+            <td colspan="2">3-2</td>
+            <td>3-4</td>
+        </tr>
+
+        <tr> <!-- tr>td*4{4-$} -->
+            <td colspan="4">4-1</td>
+        </tr>
+    </table>
+
+    <h2>셀합치기(세로) rowspan</h2>
+    <table border="1">
+        <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+            <th>제목4</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">1-1</td>
+            <td>1-2</td>
+            <td rowspan="4">1-3</td>
+            <td>1-4</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">2-2</td>
+            <td>2-4</td>
+        </tr>
+
+        <tr> <!-- tr>td*4{3-$} -->
+            <td>3-1</td>
+            <td rowspan="2">3-4</td>
+        </tr>
+
+        <tr> <!-- tr>td*4{4-$} -->
+            <td>4-1</td>
+        </tr>
+    </table>
+
+    <h2>셀합치기 (가로/세로)</h2>
+    <table border="1">
+        <tr>
+            <th>제목1</th>
+            <th>제목2</th>
+            <th>제목3</th>
+            <th>제목4</th>
+        </tr>
+
+        <tr>
+            <td colspan="3">1-1</td>
+            <td rowspan="2">1-4</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">2-1</td>
+            <td>2-2</td>
+            <td>2-3</td>
+        </tr>
+
+        <tr> <!-- tr>td*4{3-$} -->
+            <td>3-2</td>
+            <td colspan="2" rowspan="2">3-3</td>
+        </tr>
+
+        <tr> <!-- tr>td*4{4-$} -->
+            <td>4-2</td>
+        </tr>
+    </table>
+
+    <h2>공연표만들기</h2>
+    <table border="1">
+        <tr>
+            <td colspan="3">공연요금</td>
+        </tr>
+        <tr>
+            <td>구분</td>
+            <td>S석</td>
+            <td>VIP</td>
+        </tr>
+        <tr>
+            <td>성인</td>
+            <td>30,000원</td>
+            <td>50,000원</td>
+        </tr>
+        <tr>
+            <td>청소년</td>
+            <td>40,000원</td>
+            <td>60,000원</td>
+        </tr>
+        <tr>
+            <td>소인</td>
+            <td colspan="2">미취학 아동 일반 요금의 50%</td>
+        </tr>
+        <tr>
+            <td rowspan="2">공연시간</td>
+            <td>1회</td>
+            <td>2회</td>
+        </tr>
+        <tr>
+            <td>13:00시 - 15:00시</td>
+            <td>17:00시 - 19:00시</td>
+        </tr>
+    </table>
+
+</body>
+</html>

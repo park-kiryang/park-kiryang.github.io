@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>12.목록</title>
+</head>
+<body>
+    
+    <h1>1.순서가 있는 리스트 ol:알파벳, 숫자, 로마숫자로 표시함. li가 자식태그로 쓰임</h1>
+        <ol type="A">
+            <li>기상</li>
+            <li>출근준비</li>
+            <li>아침냠냠</li>
+            <li>출근은싫어</li>
+            <li>업무시작</li>
+                <ol>
+                    <li>회의</li>
+                    <li>업무</li>
+                    <li>점심</li>
+                    <li>미팅
+                        <ol>
+                            <li>인사말</li>
+                            <li>안건제의</li>
+                        </ol>
+                    </li>
+                </ol>
+            <li>퇴근룰루랄라</li>
+            <li>저녁얏호</li>
+            <li>취침</li>
+        </ol>
+
+    <h1>2.순서가 없는 리스트 ul:기호 또는 도형. li가 자식태그로 쓰임</h1>
+        <ul>
+            <li>바나나</li>
+            <li>사과</li>
+            <li>키위
+                <ul>
+                    <li>골드키위</li>
+                    <li>그린키위</li>
+                </ul>
+            </li>
+        </ul>
+
+    <h1>3.정의형 리스트 di:dt, dd가 자식태그로 쓰임</h1>
+        <dl>
+            <dt>HTML</dt>
+                <dd>마크업언어이다.</dd>
+                <dd>다양한 태그로 이루어져있다.</dd>
+                <dd>각 태그마다 들어가는 속석이 다양하다.</dd>
+        </dl>
+
+        <dl>
+            <dt>CSS</dt>
+                <dd>HTML로 작성한 문서에 스타일을 입히는 것이다.</dd>
+                <dd>인라인, 내부, 외부방식으로 작성할 수 있다.</dd>
+        </dl>
+
+        <h1>ol, ul, dl 종합예제</h1>
+            <h2>아이티 컴퍼니에서 꾸준히 일할 개발자를 구합니다.</h2>
+                <dl>
+                    <dt>아이티컴퍼니</dt>
+                    <dd>2000년도에 설립된 글로벌 회사</dd>
+                    <dd>대기업 부럽지 않은 급여 및 복리후생</dd>
+                </dl>
+
+                <ol>
+                    <li><b>입사지원</b><a href="#">바로가기</a></li>
+                    <li>서류전형</li>
+                    <li>1차면접
+                        <ul>
+                            <li>일시 : 2019.12.12</li>
+                            <li>장소 : 아이티컴퍼니본사</li>
+                            <li>기타사항
+                                <ul>
+                                    <li>복장은 단정히</li>
+                                    <li>포트폴리오 지참할 것</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>2차면접 : 1차면접자에 한하여 추후 통보</li>
+                </ol>
+
+</body>
+</html>
