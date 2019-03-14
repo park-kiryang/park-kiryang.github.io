@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>13.폼</title>
+</head>
+<body>
+    
+    <h1>폼태그실습</h1>
+        <form action="데이터를 전송할 주소입력"  method="데이터전달 방식 get or post">
+            <!-- input -->
+            <input type="text">텍스트입력(한줄)<br>
+            <input type="password">비밀번호입력(한줄)<br>
+            <input type="checkbox">체크박스(다중선택)<br>
+            <input type="radio">라디오박스(단일선택)<br>
+            <input type="file">파일업로드시 선택창 띄우기<br>
+            <input type="button" value="일반 버튼"><br>  <!-- value 안의 입력값이 버튼이름 -->
+            <input type="reset" value="초기화하기"><br>
+            <input type="submit" value="보내기"><br>
+            <input type="hidden" value="숨겨진값"><br>
+            <input type="image" src="img/bg-note.png"><br>
+
+            <!-- input으로 만든 버튼과의 차이점 : 버튼의 이름을 태그사이에 작성 -->
+            <button type="button">일반버튼</button><br>
+            <button type="reset">리셋버튼</button><br>
+            <button type="submit">전송버튼</button><br>
+            <button><img src="img/bg-note.png" alt=""></button>
+            
+
+
+            <!-- chrome은지원가능, EX 지원불가  자바스크립트로 만들어서 동일하게 적용함 -->
+            <input type="number" size="4" max="5" min="1"><br>  <!-- size 입력칸크기
+                                                                max 입력최대값 
+                                                                min 입력최소값-->
+            <input type="range" max="5" min="1" value="1"><br>  <!-- bar가 나와서 선택가능 -->
+            <input type="month"><br>  <!-- 날짜선택 달력 -->
+            <input type="color"><br>  <!-- 컬러픽커 창 -->                                           
+            <input type="search"><br>
+            <progress value="40" max="100"></progress><br>  <!-- 백분위 표시할때 주로사용 -->
+
+            <select name="" id="">
+                <!-- value=넘겨지는 값(노출x) -->
+                <option value="1">첫번째</option>
+                <option value="2">두번째</option>
+                <option value="3">세번째</option>
+            </select><br>
+
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <!-- css로 늘어나지않게 고정시킴, 디자인이 바뀔까봐 -->
+
+
+        </form>
+
+
+
+
+
+
+
+</body>
+</html>

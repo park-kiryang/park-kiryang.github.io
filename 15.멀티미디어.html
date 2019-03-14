@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>15.멀티미디어</title>
+</head>
+<body>
+    <h1>유튜브 동영상 넣기</h1>
+    <!-- 유튜브에서 영상검색->영상화면 마우스오른쪽클릭->소스코드복사눌러서 붙여넣기 -->
+    <iframe width="1019" height="573" src="https://www.youtube.com/embed/U6suRI6IjEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+    <!-- controls 영상제할수있는 컨트롤바가 생성
+        autoplay 자동재생처리
+        muted 음소거처리 -->
+    <video width="640" controls autoplay muted>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.foo" type="video/ogg">
+        이 브라우저는 video태그를 지원하지 않습니다.
+    </video>
+    
+    <audio controls autoplay muted>
+            <source src="horse.mp3" type="video/mp3">
+            <source src="horse.ogg" type="horse/ogg">
+            이 브라우저는 audio태그를 지원하지 않습니다.
+    </audio>
+
+    
+</body>
+</html>
