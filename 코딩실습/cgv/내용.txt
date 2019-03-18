@@ -1,0 +1,40 @@
+<!-- 폰트아이콘 -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+<!-- top banner -->
+src="img/top_banner.jpg" alt="쥬만지 영화정보 바로가기"
+닫기아이콘 fas fa-times
+
+<!-- header -->
+로그인, 회원가입
+src="img/cgv.png" alt="cgv로고"
+src="img/cultureplex.png" alt="cultureplex"
+영화, 예매, 극장, 이벤트&컬처
+
+<!-- 메인광고 -->
+src="img/slide1.jpg" alt="let's play at cgv"
+src="img/slide2.jpg" alt="이달의 cgv"
+src="img/slide3.jpg" alt="2018 cgv calender"
+이전 아이콘 fas fa-chevron-left
+다음 아이콘 fas fa-chevron-right
+
+<!-- movie-selection-->
+src="img/h3_movie_selection.gif" alt="movie selection"
+src="img/banner5.jpg" alt="코코 포스터"
+
+<!-- 이벤트 -->
+src="img/h3_event.gif" alt="event"
+src="img/banner1.jpg" alt="이달의 cgv"
+src="img/banner2.jpg" alt="1318클럽 감동 어드벤처 시사회"
+src="img/banner3.jpg" alt="new year 기획상품 출시"
+src="img/banner4.jpg" alt="나를 바꾸는 글쓰기"
+
+<!-- footer -->
+회사소개/IR/채용정보/광고문의/이용약관
+
+<!-- 사이트정보 -->
+(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)
+대표이사 : 서정 | 사업자등록번호 : 104-81-45690 | 통신판매업신고번호 : 2017-서울용산-0662
+개인정보보호 책임자 : 마케팅 담당 정종민대표 | 이메일 : cjcgvmaster@cj.net | CGV고객센터 : 1544-1122
+
+copyright &copy; 2016 CJ CGV. All Rights Reserved

@@ -1,0 +1,64 @@
+<!-- 주메뉴 -->
+COFFEE-커피
+          -나와 어울리는 커피
+          -스타벅스 리저브TM
+MENU-음료
+        -푸드 
+        -상품 
+        -카드 
+STORE-매장찾기
+        -드라이브 드루 매장
+        -스타벅스 리저브TM매장
+RESPONSIBILITY-사회공헌 캠피인 소개
+                     -지역사회 참여활동
+
+<!-- util메뉴 -->
+Sign in
+My Starbucks
+Customer Service
+Find a Store
+
+<!-- 멤버십 메뉴 -->
+<!-- 회원가입/로그인 -->
+img/login.png
+스타벅스 코리아 회원이 아니세요?
+스타벅스커피 코리아 회원만의 특별한 혜택을 누릴 수 있습니다.
+<!-- 스타벅스카드 -->
+img/card.png
+스타벅스카드를 가지고 계신가요?
+스타벅스를 등록하시면, 마이스타벅스 리워드만의 특별한 혜택을 누릴 수 있습니다.
+
+<!-- 신제품 광고 -->
+img/emblem.png  alt="show your flavor"
+img/bev1_cup.png alt="슈크림딸기프라푸치노"
+img/bev1_txt.png alt="choux cream strawberry frappuccino"
+
+<!-- 제품소개 -->
+<!-- 제품정보 -->
+img/fav_prod_txt01.png" alt="pick your favorite          
+img/fav_prod_txt02.png" alt="다양한 메뉴를 스타벅스에서 즐겨보세요."
+img/fav_prod_img.png
+<!-- 새로나온 제품 -->
+img/coffee1.jpg  나이트 콜드 브루/Nitro cold Brew
+<!-- 리저브 커피 -->
+스타벅스 리저브TM
+img/icon_reserve_info1.png clover
+img/icon_reserve_info2.png black eagle
+img/icon_reserve_info3.png siphon
+img/icon_reserve_info4.png poc
+
+<!-- 리저브매장(뒤집기효과) -->
+img/reserve_medal01.png alt="reserve"
+img/reserve_medal02.png alt="스타벅스 리저브 매장, 스타벅스 리저브 TM커피 및 관련제품을 판매하는 매장을 확인하려면 매장보기를 눌러주세요."
+
+<!-- footer -->
+<!-- banner애니메이션 -->
+img/banner1.jpg~img/banner6.jpg
+
+<!-- 사이트정보 -->
+사업자등록번호 201-81-21515
+(주)스타벅스커피 코리아 대표이사 이석구
+TEL : 02) 3015-1100 / FAX : 02) 3015-1106
+개인정보 책임자 : 강기원
+    
+ⓒ 2015 Starbucks Coffee Company. All Rights Reserved.
