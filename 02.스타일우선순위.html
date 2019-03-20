@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>02.스타일우선순위</title>
+    <style>
+        h1{color:red !important;} /* !important를 넣어주면 가장작은 우선순위도 1순위가됨 */
+        #logo{color:blue;}
+        .logo{color:yellow;}
+        /* 같은 요소를 다른 방식으로 선택했을 경우 선택자의 우선순위는?
+            인라인 > id > class > 요소(태그)이름
+            !important는 기존의 우선순위를 무시하고 가장 우선이 되도록 처리해줌.
+        */
+    </style>
+</head>
+<body>
+    <h1 id="logo" class="logo" style="">로고</h1>
+</body>
+</html>

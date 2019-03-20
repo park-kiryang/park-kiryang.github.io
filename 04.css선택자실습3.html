@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04.css선택자실습3</title>
+    
+    <style>
+        /*상태, 반응 선택자*/
+        a{color:blue;}
+        /*방문 한번도 하지 않은 링크*/
+        a:link{color:red;}
+        /*방문을 한번이라도 했을 경우*/
+        a:visited{color:pink;}
+        /*마우스를 올렸을 때*/
+        a:hover{color:orangered;}
+        /* form:hover{color:orangered;} */
+        a:active{color:black;}
+
+        /*체크박스나 라디오가 선택이 되었을 때 형제요소 스타일 변경*/
+        [type="radio"]:checked+span{color:red;}  /*radio 의 span를 선택*/
+        [type="checkbox"]:checked+span{color:blue;}
+        .radio input:checked+span{color:red;}
+        .checked input:checked+span{color:black;}
+        [name="subjict"]:checked+span{color:red;}
+
+        /*비활성화 상태의 스타일 변경*/
+        input[type="text"]{background:black;}
+        input:disabled{background: red;}
+        
+
+    </style>
+</head>
+<body>
+    <a href="http://www.naver.com">네이버</a>
+    <a href="http://www.daum.net">다음</a>
+    <a href="http://www.facebook.com">페이스북</a>
+
+    <form action="#">
+        <div class="radio">
+            <label><input type="radio" name="subject"><span>회화</span></label>
+            <label><input type="radio" name="subject"><span>문법</span></label>
+            <label><input type="radio" name="subject"><span>작문</span></label>
+        </div>
+        <div class="checkbox">
+                <label><input type="checkbox"><span>검정</span></label>
+                <label><input type="checkbox"><span>빨강</span></label>
+                <label><input type="checkbox"><span>파랑</span></label>        
+        </div>
+        입력상자 <input type="text"><br>
+        입력불가 <input type="text" disabled>
+    </form>
+</body>
+</html>

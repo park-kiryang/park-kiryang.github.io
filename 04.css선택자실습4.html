@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04.css선택자실습</title>
+
+    <style>
+        table{
+            /* 테이블의 두깨를 무너뜨려서 테두리가 한줄로 보이게 함*/
+            border-collapse:collapse ;}
+        th,td{border:1px solid #000;}
+
+        /* 구조선택자(순서를 정해서 스타일 입히기*/
+        /* 1. tr의 후손 td중 첫번째 td만 선택해서 색상 변경*/
+        tr td:nth-child(2){background: olivedrab;}
+        tr td:nth-of-type(1){}
+        th+td{}
+
+        /* 2. table의 자식 tr중 짝수번째 줄만 선택해서 색상 변경*/
+        /* 수열에서 n은 0부터 1씩 증가하는 값을 가리킨다. */
+        table tr:nth-child(2n){background: white;} /*짝수 even */
+        table tr:nth-child(2n-1){background: black;} /*홀수 odd */
+
+        /* 3. table중 첫번째 줄만 선택해서 색상 변경*/
+        tr:first-child{ color:yellow;}
+
+        /* 4. table중 마지막 줄만 선택해서 색상 변경*/
+        tr:last-child{color:teal;}
+
+        /* 5. 각 줄의 마지막 td만 선택해서 색상 변경*/
+        tr td:last-child{color:blue;}
+
+        /*글쓴이3만 선택*/
+        tr:nth-child(3){} 
+        td:last-child(3){}
+        td:nth-of-type(2){}
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>1</th>
+            <td>내용1</td>
+            <td>글쓴이2</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>내용2</td>
+            <td>글쓴이3</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>내용3</td>
+            <td>글쓴이3</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>내용4</td>
+            <td>글쓴이4</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>내용5</td>
+            <td>글쓴이5</td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td>내용6</td>
+            <td>글쓴이6</td>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>

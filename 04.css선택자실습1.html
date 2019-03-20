@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04.css선택자실습1</title>
+<style>
+    /*전체선택자*/
+    header *{}
+    section *{}
+
+    /*id 선택자*/
+    #center{}
+    #gnb{}
+    #sns{}
+
+    /*class 선택자*/
+    .active{}
+    .service1{}
+    .service2{}
+    .service3{}
+    .site-info{ color:red;}
+
+    /*태그(요소선택자)*/
+    body{}
+    div{}
+    header{}
+    h1{}
+    ul{}
+    li{}
+    a{}
+    section{}
+    h2{}
+    p{}
+    article{}
+    strong{}
+    footer{}
+    small{}
+
+    /*후손선택자*/
+    div header{}
+    .center header{}
+    header h1{}
+    ul ul{}
+    ul li{}
+    li a{}
+    .active a{}
+    article p{}
+    section h3{}
+    section p{}
+    section a{}
+    footer a{}
+    footer ul li{}
+    footer .site-info a{}
+    .site-info a{}
+
+    /*자식선택자*/
+    footer>*{}
+    footer>small{}
+    #gnb>li{}
+    #gnb>li>a{}
+    ul>li>a{}
+
+    /*형제선택자*/
+    h2+p{} /* h2와 같은위치에있는 p */
+    h2~article{}  /* h2와 같은위치에있는 article 모두선택 */
+    h1+ul{}
+    h1~ul{color:red;}
+
+
+
+    </style>
+</head>
+<body>
+    <div id="center">
+        <header>
+            <h1>카카오</h1>
+            <ul id="gnb">
+                <li class="active">
+                    <a href="#">카카오톡</a>
+                    <ul>
+                        <li><a href="#">서비스소개</a></li>
+                        <li><a href="#">적용사례</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">카카오스토리</a></li>
+                <li><a href="#">카카오프렌즈</a></li>
+            </ul>
+            <ul id="sns">
+                <li><a href="#">페이스북</a></li>
+                <li><a href="#">트위터</a></li>
+            </ul>
+        </header>
+        <section>
+            <h2>카카오 서비스</h2>
+            <p>카카오의 다양한 서비스를 소개합니다.</p>
+            <article class="service1">
+                <h3>카카오톡</h3>
+                <strong>언제 어디서나, 1년 365일 몇명과 함께하든 무료입니다.</strong>
+                <p>가입과 로그인 없이 전화번호만 있으면 실시간 그룹채팅 및...</p>
+                <a href="#">자세히보기</a>
+            </article>
+            <article class="service2">
+                    <h3>카카오 스토리</h3>
+                    <strong>누구나 쉽게 만들고 운영하는 스토리채널</strong>
+                    <p>내 스토리는 편한 친구들에게만 공개하거나 나만 볼 수도 있어요...</p>
+                    <a href="#">자세히보기</a>
+            </article>
+            <article class="service3">
+                    <h3>카카오 프렌즈</h3>
+                    <strong>누구에게나 사랑받는 국민 캐릭터 카카오 프렌즈</strong>
+                    <p>저마다의 개성과 매력을 지닌 캐릭터들은 만나보세요...</p>
+                    <a href="#">자세히보기</a>
+            </article>
+        </section>
+        <footer>
+            <ul class="site-info">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <small>&copy; Kakao, Crop. ALL rights reserved.</small>
+        </footer>
+    </div>
+</body>
+</html>
