@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10.그라데이션</title>
+    <style>
+        body{height: 100vh;
+            background: #3b679e; /*그라데이션이 적용되지않을때 가장비슷한 단색을 나옴*/
+            /* background: -moz-linear-gradient(45deg, #3b679e 0%, #3dd129 32%, #a3a31a 79%, #7db9e8 100%);
+            background: -webkit-linear-gradient(45deg, #3b679e 0%,#3dd129 32%,#a3a31a 79%,#7db9e8 100%);
+            background: linear-gradient(45deg, #3b679e 0%,#3dd129 32%,#a3a31a 79%,#7db9e8 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=1 ); */
+
+            background: #3b679e;  /*ellipse 는 타원  circle은 정원*/
+            background: -moz-radial-gradient(center, ellipse cover, #3b679e 0%, #3dd129 32%, #a3a31a 79%, #7db9e8 100%);
+            background: -webkit-radial-gradient(center, ellipse cover, #3b679e 0%,#3dd129 32%,#a3a31a 79%,#7db9e8 100%);
+            background: radial-gradient(ellipse at center, #3b679e 0%,#3dd129 32%,#a3a31a 79%,#7db9e8 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=1 );
+        
+        /* http://www.colorzilla.com/gradient-editor 그라데이션만들어주는 사이트*/}
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

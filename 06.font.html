@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06.font</title>
+    <link href="https://fonts.googleapis.com/css?family=Margarine|Nanum+Gothic" rel="stylesheet">
+    <!-- 1.link태그로 연결해서 font-family : 폰트입력 
+        font-family: 'Titillium Web', sans-serif; (구글폰트사이트가서 원하는 폰트 담고
+        담기면 STAMDARD안의 링크연결 Specify in CSS 안에 있는거 복사해서 적용) -->
+    
+    <style>
+    /*  2.@import url로 사이트 연결 
+        (구글폰트 사이트가서 폰트 담고 @IMPORT안의 style내용 복사해서 연결 
+        link연결 */
+    @import url('https://fonts.googleapis.com/css?family=Margarine|Nanum+Gothic');
+     
+    /* 3. 다운로드한 파일을 가져와 적용할 때 
+        (구글폰트 사이트가서 폰트담고 다운로드해서 압축풀고 폴더채로 넣고 
+        파일명을 적어서 적용) */
+   @font-face{
+        font-family:TitilliumWeb-ExtraLightItalic;
+        src:url(Titillium_Web/TitilliumWeb-ExtraLightItalic.ttf); 
+    }
+    /* 폴더이름/파일일이름  */
+
+    body{font-family:TitilliumWeb-ExtraLightItalic;}
+
+    p{font-family: TitilliumWeb-ExtraLightItalic;}
+
+    /* 폰트속성 */
+    li{ /*폰트스타일*/     font-style:italic;
+        /*폰트체 설정하기 */ font-family: TitilliumWeb-ExtraLightItalic;
+        /*폰트의 굵기*/     font-weight: bold;
+        /*줄간격*/          line-height: 60px;
+        /*폰트크기*/       font-size:20px;
+        /*축약형 : 위의값을 하나로 합쳐서 작성
+               스타일 굵기 크기/줄간격 폰트체  순서대로작성*/
+        font :italic bold 20px/60px TitilliumWeb-ExtraLightItalic;}
+
+    </style>
+</head>
+<body>
+    <h1>나눔고딕체 적용하기</h1>
+    <h2>웹폰트</h2>
+    <ul>
+        <li>웹페이지에서 사용되는 폰트로써 구글 웹폰트에서 검색 후 사용(또는 직접찾아서 적용)</li>
+        <li>무료 웹폰트가 아닌 것은 별로 라이센스를 구매 후 사용</li>
+        <li>스타일은 크게 고딕체(sans-serif), 명조체(serif)로 나뉜다.</li>
+        <li>font-family의 값은 하나만 넣을 수도 있고 여러개를 넣을 수도 있다.
+            <br>첫번째 폰트가 적용되지 않을 경우 그 다음 설정한 폰트가 적용되는 방식.</li>
+        <li>글꼴, 크기, 굵기, 기울임, 줄간격을 속성값으로 줄 수 있다.</li>
+        <li>브라우저별 지원되는 웹폰트 확장자를 확인하고 사용한다.
+            <a href="https://www.w3cschools.com/css/css3_font.asp">웹폰트확장자</a>
+            <!-- 구글웹폰트 사이트가면 폰트나옴 -->
+        </li>
+    </ul>
+
+    <p>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+
+    </p>
+</body>
+</html>

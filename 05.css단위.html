@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05.css단위</title>
+
+    <style>
+        /* 단위변환 사이트 http://pxtoem.com */
+        /* html태그의 기본 글꼴 크기는 16px이다 */
+        html{font-size:16px;}
+        .wrap{font-size:2em;}  /*16px의 2배수*/
+
+        /* 상대단위 rem, enm percent */
+        .rem{font-size: 2rem;}      /* 2배수 (부모에 상관없이 html을 기준으로 적용) */
+        .em{font-size: 2em;}        /* 2배수 (가까운 부모의 영향을 받아 적용) */
+        .percent{font-size: 200%;}  /* 2배수 (가까운 부모의 영향을 받아 적용) */
+
+        /* 절대단위 px, pt (html의 영향을 받지않고 절대적으로 적용) 
+            태그가 많이 잡히면 영향을 받기때문에 pt, px 많이사용   */
+        .px{font-size: 16px;}
+        .pt{font-size: 12pt;}
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="wrap">
+        <p class="rem">문장입니다.</p>
+        <p class="em">문장입니다.</p>
+        <p class="percent">문장입니다.</p>
+        <p class="px">문장입니다.</p>
+        <p class="pt">문장입니다.</p>
+    </div>
+
+    <hr>
+    여러가지 태그를 작성 후 브라우저에서 기본 크기 확인하기
+    <!-- h$*6 -->
+    <h1>제목</h1>
+    <h2>제목</h2>
+    <h3>제목</h3>
+    <h4>제목</h4>
+    <h5>제목</h5>
+    <h6>제목</h6>
+    <a href="#">링크</a>
+    <input type="text">
+    <span>인라인요소</span>
+
+
+
+
+
+</body>
+</html>

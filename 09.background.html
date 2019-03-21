@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>09.background</title>
+
+    <style>
+        *{margin: 0;padding: 0;}
+        body{
+            height: 100vh; /*vh -> 화면에 100%맞춰준다*/
+            /* 배경색 */
+            background: gray;
+            /* 배경 이미지 */
+            background-image: url(img/city.jpg);
+            /* 배경이미지 반복설정 :no-repeat, repeat(기본설정값), repeat-x, repeat-y */
+            background-repeat: no-repeat;
+            /* 배경이지미 위치를 방향으로 지정:top left right bottom center 
+            (중복사용가능) ex)top right  하나만 넣으면 기본center적용*/
+            background-position: center;
+            /* 배경이미지 위치를 수치로 지정:%, (x y축의 값을 설정) */
+            /* background-position: 100%; */
+            /* 배경이미지 고정, 스크롤처리:fixed, scroll(기본값은 scroll) */
+            background-attachment: scroll;
+            /* 축약형 :위의 값을 순차적으로 적용 */
+            background:gray url(img/city.jpg) no-repeat right fixed;
+            /* 배경이미지를 여러장 보이게 하기 */
+            /* background: url(img/city.jpg) no-repeat center fixed,
+                        url(img/ryan.png) no-repeat right bottom,
+                        url(img/woman.png) no-repeat left top fixed;
+            background-color: red; */
+            /* css3에 추가된 속성 
+            cover : 이미지를 최대치로 보여주지만 이미지가 짤릴수도 있다.
+                    여백이 생기지않는다.
+            contain : 이미치를 최대치로 보여주는데 이미지를 짜르지않고 원본비율유지
+                    여백이 생긴다 
+            수치로 지장 : %, px, auto */            
+            background-size:auto 100%;
+            }
+
+            p{color:#fff}           
+    </style>
+</head>
+<body>
+    <!-- lipsum사이트가서 하단에 generate~ 눌러서 개발자도구 div copy element-->
+    <div id="lipsum"> 
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum, mi in consectetur mattis, justo velit pellentesque odio, at facilisis magna nisi in felis. Phasellus placerat sit amet elit et sollicitudin. Quisque ligula quam, ornare a iaculis vel, viverra et elit. Integer vestibulum magna a vehicula suscipit. Pellentesque cursus sem ut condimentum molestie. Cras congue, ante vitae rhoncus porttitor, leo diam accumsan nunc, ut volutpat nisl turpis eget est. Nullam ipsum nunc, gravida eget arcu at, consequat commodo sapien. Cras nec pellentesque erat. Quisque id consectetur quam. Morbi ultrices ornare pretium. Morbi posuere ante vitae enim suscipit mollis. Morbi ac fringilla sapien, sit amet maximus ligula. Aliquam ut blandit sapien. In placerat quis ex non placerat. In pulvinar neque eget nulla congue, facilisis congue lorem viverra.
+        </p>
+        <p>
+        Sed at velit ut ipsum faucibus tincidunt. Proin elementum dictum purus, eget blandit neque lacinia sed. Maecenas tempus mi ut nisi porttitor dictum. Pellentesque sed tortor libero. Fusce urna urna, malesuada ac aliquet sed, elementum sed velit. Nulla sit amet risus id diam bibendum mattis. Integer vitae consectetur justo. Donec porttitor augue enim, nec ullamcorper mauris pulvinar sed. Duis id egestas eros. Quisque sagittis ex porta, placerat lorem et, varius erat. Nunc nec ante quis nisl scelerisque venenatis sed vitae lacus. Phasellus sit amet iaculis mauris. Mauris eleifend, nunc a euismod pharetra, mi ipsum ornare felis, in dapibus sem sapien non arcu. Duis sit amet convallis dolor, a aliquet arcu. Vestibulum sollicitudin risus non lorem tincidunt, sagittis euismod enim vulputate.
+        </p>
+        <p>
+        Donec pretium in lectus id ultricies. Sed eget maximus nunc, id ultrices diam. Maecenas ante nisi, rhoncus sit amet mauris et, convallis tincidunt leo. Curabitur dapibus varius dignissim. Cras lorem ligula, accumsan vel dapibus a, sodales non dui. Suspendisse a pretium ante, non blandit libero. Etiam finibus lorem id magna pulvinar tincidunt. Cras at maximus orci. Integer sed eros a enim faucibus volutpat. Suspendisse odio nisi, convallis viverra vehicula sed, dictum eu sapien. Etiam condimentum, mauris non feugiat convallis, arcu diam congue quam, in facilisis ligula erat ut massa. Curabitur malesuada quam diam, vel cursus metus consequat in. Quisque nec placerat felis, quis tincidunt tortor. Etiam fringilla gravida efficitur. Donec sed tellus vitae nulla faucibus posuere et sit amet lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        </p>
+        <p>
+        Aenean luctus sagittis mattis. Duis nec nulla convallis, convallis nulla in, aliquet neque. Vestibulum et pharetra quam, et convallis nibh. Nunc non sagittis ex, nec viverra dui. Mauris ultrices, sem sed molestie sagittis, magna ipsum semper nisl, at ultricies nisi dolor a dolor. Aliquam quis finibus libero. Proin volutpat semper massa eget commodo. Cras neque diam, vulputate eget hendrerit quis, cursus in sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec luctus hendrerit hendrerit. Donec ultrices est at lacus volutpat, eget gravida sem pharetra. Vivamus semper massa enim, vitae placerat orci consectetur non. Curabitur non lectus velit.
+        </p>
+        <p>
+        Vestibulum sollicitudin tincidunt pulvinar. Proin eleifend varius felis, sed interdum nunc. Vestibulum risus dui, placerat tempus ullamcorper quis, fermentum ac augue. Nunc mollis, ipsum maximus gravida vulputate, risus nibh condimentum sem, sed porttitor enim tortor ut justo. Nam ornare mi ac ex varius, hendrerit sollicitudin massa interdum. Nulla blandit libero consectetur libero feugiat convallis. Etiam aliquam scelerisque libero et luctus. Vestibulum in elementum libero, id congue metus. Aenean placerat eget felis in vulputate. Sed suscipit magna quis lectus eleifend, ac scelerisque massa eleifend. Aenean tincidunt nisl a commodo pellentesque. Aenean enim nulla, pretium interdum nisi id, fringilla tincidunt leo. Morbi vulputate pretium orci sit amet laoreet. Integer quis enim in magna dignissim lacinia.
+        </p></div>
+</body>
+</html>

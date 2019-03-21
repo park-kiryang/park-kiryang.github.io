@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>07.text</title>
+    <style>
+        /*색상*/
+        h1{color:darkcyan;}
+
+        /*수평정렬 : left, center, right, justify*/
+        p:nth-of-type(1){text-align: justify;}
+        p:nth-of-type(2){text-align: right;}
+
+        /* 줄 넣기:none, underline, line-through, overline */
+        a{text-decoration: none;}
+
+        /* 영문 대소문자 변경:capitalize(단어의 첫글자 대문자),
+                             lowercase (모두 소문자),
+                             uppercase (모두 대문자)*/
+        p:nth-of-type(1){text-transform: capitalize;}
+
+        /* 단어간격 (음수가능)*/
+        p:nth-of-type(2){word-spacing: 30px;}
+        
+        /* 문자간격 (음수가능)*/
+        p:nth-of-type(2){letter-spacing: 30px;}
+        
+        /* 들여쓰기 (음수가능)*/
+        p:nth-of-type(1){text-indent:30px;}
+        input[type="text"]{text-indent: 10px;} /* 입력칸 앞에 들여쓰기 */ 
+
+        /* 수직정렬 : 테이블의 셀, 텍스트, 인라인 요소일 경우 사용 가능 */
+        div img{vertical-align: middle;}
+
+        /* 그림자 : x축 y축 번짐 색상 */
+        /* 기본값 설정해놓고 크롬의 개발자도구(F12)에서 컬러픽커로 변경가능
+            (,)쉼표 사용하면 그림자 여러개 넣을수 있다. */
+        h1{text-shadow:5px 5px 7px black;}
+
+
+    </style>
+</head>
+<body>
+    <h1>카카오톡</h1>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <p>Anytime anywhere</p>
+    <p>언제나 어디서나, 1년 365일 몇명과 함께든 무료</p>
+    <p>가입과 로그인 없이 전화번호만 있으면 실시간 그룹채팅 및...</p>
+    <a href="#">자세히 보기</a>
+    <div>이미지<img src="img/w3.jpg" alt="w3c"></div>
+    <input type="text">
+</body>
+</html>
