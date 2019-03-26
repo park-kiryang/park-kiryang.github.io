@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>20.transition</title>
+
+    <style>
+        div{position:relative;
+        top:0; left:0; width: 100px; height: 100px;
+        background:orange;
+        transition-property:all;
+        transition-duration: 1s;
+        transition-timing-function:ease;
+        transition-delay:2s;
+        /* 속성명(반드시) 시간(반드시) 속도 지연시간 */
+        transition:background-color 1s ease cubic-bezier(.19,.9,.42,.82);}
+        /* 속성을 각각 지정하고 싶을때는 쉼표를 사용 */
+       div{transition:background-color cubic-bezier(.19,.9,.42,.82),
+                    top 2s,
+                    left 3s, 
+                    width 1s, 
+                    height 5s;}
+
+        div:hover{top:50px; left:50px;
+        width: 200px; height: 200px;
+        background:blue;}
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
