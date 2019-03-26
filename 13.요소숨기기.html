@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>13.요소숨기기</title>
+    
+    <style>
+        div{background: cadetblue;}
+        div p{border:1px solid #000;}
+        /* hover사용시 숨기려고 하는 대상에 적용하는것이 아니라 그 상위요소에 적용할 것 */
+        .box1:hover p{visibility:hidden;}
+        .box2:hover p{opacity: 0.2;}/*투명도 조절가능 0~1*/
+        .box3:hover p{display:none;}
+    </style>
+</head>
+<body>
+    <h2>특정요소를 숨기기위한 방법3가지</h2>
+    <div class="box1">
+        <h3>visibility:hidden</h3>
+        <p>숨김처리되고 원래 영역을 유지합니다.</p>
+    </div>
+    
+    <div class="box2">
+        <h3>opacity:0</h3>
+        <p>투명처리되고 원래 영역을 유지합니다.</p>
+    </div>
+
+    <div class="box3">
+        <h3>display:none</h3>
+        <p>원래 영역이 사라집니다.</p>
+    </div>
+</body>
+</html>
