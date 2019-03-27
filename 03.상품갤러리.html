@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>03.상품갤러리</title>
+    
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style: none;}
+        img{width:100%;}
+
+        .wrap{
+            /* 많이쓰는방법!! 가로크기를 가지면서 화면의 정중앙에 배치되게 하기(가로병렬) */
+            width:800px; margin:auto;}
+
+        h2{
+            text-align: center; border-bottom:1px solid #000;
+            height: 100px; line-height: 100px;
+        }
+
+        .product-list ul{}
+        .prosuct-list ul li{}
+        .product-list ul li .list-item{}
+        .product-list ul li .list-item span{}
+        .product-list ul li .list-item span.new{}
+        .product-list ul li .list-item dl{}
+        .product-list ul li .list-item dl dt{}
+        .product-list ul li .list-item dl dd{}
+        .product-list ul li .list-item .over{}
+        .product-list ul li .list-item .over button{}
+        .product-list ul li .list-item:hover .over{}
+        
+
+        
+
+
+    </style>
+
+</head>
+<body>
+    <div class="wrap">
+        <h2>상품리스트</h2>
+        <div class="product-list">
+            <ul>
+                <li>
+                    <div class="list-item">
+                        <span class="new">NEW</span>
+                        <img src="img/boys1.png" alt="신발">
+                        <dl>
+                            <dt>신발1</dt>
+                            <dd>가격50,000원</dd>
+                        </dl>
+                        <div class="over">
+                            <button class="fas fa-search"></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
