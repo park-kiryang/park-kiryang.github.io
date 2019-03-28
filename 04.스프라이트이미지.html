@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04.스프라이트이미지</title>
+
+    <style>
+        .icon{
+            background-image: url(img/sprite.png);
+            display: inline-block;
+        }
+        .icon_imax{
+            /* imax의 크기 */
+            width: 60px; height: 15px;
+            /* imax시작부분 */
+            background-position:-111px -430px;
+        }
+
+        .icon_photo{
+            width:90px; height: 80px;
+            background-position:-365px -307px;
+            
+        }
+
+        .my {
+        background-image: url(img/all.png);
+        background-repeat: no-repeat;
+        display: block;
+        }
+
+        .my-001-sun {
+            width: 64px;
+            height: 64px;
+            background-position: -5px -5px;
+        }
+
+        .my-002-profile {
+            width: 64px;
+            height: 64px;
+            background-position: -79px -5px;
+        }
+
+        .my-003-left-arrow {
+            width: 64px;
+            height: 64px;
+            background-position: -5px -79px;
+        }
+
+        .my-004-down-arrow {
+            width: 64px;
+            height: 64px;
+            background-position: -79px -79px;
+        }
+
+        .my-005-right-arrow {
+            width: 64px;
+            height: 64px;
+            background-position: -153px -5px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 스프라이트 이미지란?
+    여러개의 이미지를 하나의 이미지로 저장해놓고 사용하는 것
+
+    *특징
+    -속도가 생명인 모바일환경에서는 필수적으로 사용됨.
+    -관련있는 이미지를 하나의 파일로 관리하므로 유지보수가 편리하다.
+    -백그라운드 포지션(위치)와 보여주고자하는 이미지의 영역을 지정하면 해당 부분만 노출.
+
+    *사용법
+    1. 단일 이미지 소스파일(png, jpg, gif)등을 준비한다.
+    2. 이미지 스프라이트 툴을 사용해 스프라이드 이미지 소스를 얻는다.
+        틀을 사용하는 좋은점 => 각 이미지의 좌표값을 구해준다.
+    3. 내가 노출시키고 싶은 부분의 이미지에 대한 크기와 위치값을 가지고 있는 클래스이름을 부여한다.
+    4. 태그에 class="스프라이트이미지이름"으로 이미지를 노출시킨다.
+
+    http://cssspritestool.com/
+    http://www.toptal.com/develpers/css/sprite-generator/
+    사이트가서 사진만들어서 html과 css따와서 붙이기
+    -->
+
+    <i class="icon icon_imax"></i>
+    <i class="icon icon_photo"></i>
+    <img src="img/001-sun.png" alt="sun">
+    <i class="my my-001-sun"></i>
+    <i class="my my-002-profile"></i>
+    <i class="my my-003-left-arrow"></i>
+    <i class="my my-004-down-arrow"></i>
+    <i class="my my-005-right-arrow"></i>
+
+
+    <button><i class="bg bg-004_down_arrow"></i></button>
+    
+</body>
+</html>

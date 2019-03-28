@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    .btn-group{
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 330px;
+      margin: 130px -165px;
+      text-align: center;
+    }
+    button{
+      font-size: 20px;
+      border:0;
+      background: #3bd0be;
+      color:#fff;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+    button:nth-child(1){background: red;}
+    button:nth-child(2){background: orange;}
+    button:nth-child(3){background: purple;}
+    button:nth-child(4){background: blue;}
+    button:nth-child(5){background: #ffc400;}
+    button:nth-child(6){background: green;}
+
+    /* 정육면체를 감싸고 있는 영역을 배치시킴. */
+    .box-rotate-wrap{
+      position: absolute;
+      top:50%; left:50%;
+      transform: translate(-50%, -50%);
+      perspective: 500px;/*원근감 처리*/
+      width: 500px; height: 500px;
+      border-radius: 15px;
+      box-shadow: inset 0 0 50px #607D8B;
+    }
+
+    /* 정육면체의 크기 */
+    .box, .box>div{width: 200px; height: 200px;}
+    .box{
+      margin: 100px auto;
+    }
+    .box>div{
+      position: absolute;
+      top:0; left:0;
+      padding: 20px;
+      opacity: 0.8;/*6개의 면을 다 보기위해서 반투명하게 적용*/
+    }
+    /* rotate3d(x,y,z,각도) translate3d(x,y,z)*/
+    .front{
+      z-index: 1;
+      background: red;
+      transform: rotate3d(0,0,0,0deg) translate3d(0,0,100px);
+    }
+    .back{background: orange;
+      transform: rotate3d(0,1,0,180deg) translate3d(0,0,100px);
+    }
+    .top{
+      background: purple;
+      transform: rotate3d(1,0,0,90deg) translate3d(0,0,100px);
+    }
+    .bottom{background: blue;
+      transform: rotate3d(1,0,0,-90deg) translate3d(0,0,100px);
+    }
+    .left{background: yellow;
+      transform: rotate3d(0,1,0,-90deg) translate3d(0,0,100px);
+    }
+    .right{background: green;
+      transform: rotate3d(0,1,0,90deg) translate3d(0,0,100px);
+    }
+
+    /* 정육면체 회전 */
+    .box-rotate{
+      transition: all 1s;
+      transform-style: preserve-3d;
+    }
+    /* 윗면 돌려서 보기 */
+    .box-rotate-top:hover{
+      transform:rotate3d(1,0,0,-90deg);
+    }
+    .box-rotate-bottom:hover{
+      transform:rotate3d(1,0,0,90deg);
+    }
+    .box-rotate-left:hover{
+      transform:rotate3d(0,1,0,90deg);
+    }
+    .box-rotate-right:hover{
+      transform:rotate3d(0,1,0,-90deg);
+    }
+    .box-rotate-back:hover{
+      transform:rotate3d(0,1,0,180deg);
+    }
+
+    /* 클릭했을 때 적용할 클래스 */
+    .box-rotate-top{
+      transform:rotate3d(1,0,0,-90deg);
+    }
+    .box-rotate-bottom{
+      transform:rotate3d(1,0,0,90deg);
+    }
+    .box-rotate-left{
+      transform:rotate3d(0,1,0,90deg);
+    }
+    .box-rotate-right{
+      transform:rotate3d(0,1,0,-90deg);
+    }
+    .box-rotate-back{
+      transform:rotate3d(0,1,0,180deg);
+    }
+
+    /* 애니메이션 */
+    .box-rotate-auto{
+      animation: auto 8s linear infinite alternate;
+      /* 재생 */
+      animation-play-state: running;
+    }
+    .box-rotate-stop{
+      animation: auto 8s linear infinite alternate;
+      /* 일시정지 */
+      animation-play-state: paused;
+    }
+
+    @keyframes auto {
+      0%{transform: rotate3d(1,0,0,-90deg);}
+      20%{transform: rotate3d(1,0,0,90deg);}
+      40%{transform: rotate3d(0,1,0,90deg);}
+      60%{transform: rotate3d(0,1,0,-90deg);}
+      80%{transform: rotate3d(0,0,0,0deg);}
+      100%{transform: rotate3d(0,1,0,180deg);}
+    }
+
+
+  </style>
+  <script>
+    //각 버튼을 눌렀을 때 해당 방향을 볼수 있도록 해당클래스 적용
+    $(function(){
+      $('button').click(function(){
+        //버튼을 눌렀을 때 해당 방향값을 저장한다.
+        var content=$(this).text();
+        var id=$(this).attr('id');
+        var className;
+        if(id=='random'){
+          var index=Math.floor(Math.random()*6);
+          var direction=['front','back','top','bottom','left','right'];
+          className='box-rotate-'+direction[index];
+        }else{
+          className='box-rotate-'+id;
+        }
+        //.box에 있는 클래스를 기본값으로 초기화시키기
+        $('.box').attr('class','box box-rotate');
+        //내가 원하는 방향에 대한 클래스 추가
+        $('.box').addClass(className);        
+      })
+    })
+  </script>
+</head>
+<body>
+  <div class="box-rotate-wrap">
+    <div class="box box-rotate">
+      <div class="front">
+        <h2>front</h2>
+      </div>
+      <div class="back">
+        <h2>back</h2>
+      </div>
+      <div class="top">
+        <h2>top</h2>
+      </div>
+      <div class="bottom">
+        <h2>bottom</h2>
+      </div>
+      <div class="left">
+        <h2>left</h2>
+      </div>
+      <div class="right">
+        <h2>right</h2>
+      </div>
+    </div>
+  </div>
+  <div class="btn-group">
+    <button id="front">front</button>
+    <button id="back">back</button>
+    <button id="top">top</button>
+    <button id="bottom">bottom</button>
+    <button id="left">left</button>
+    <button id="right">right</button>
+    <button id="random">random</button>
+    <button id="auto">auto</button>
+    <button id="stop">stop</button>
+  </div>
+</body>
+</html>
