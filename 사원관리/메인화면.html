@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>메인화면</title>
+    <!-- 외부소스먼저읽히고 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- 내가작성한 소스읽고 -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section class="main">
+        <article class="center">
+        <h1>사원관리프로그램</h1>
+            <form action="로그인완료.html">
+                <div class="row">
+                    <label for="id" class="fas fa-user"><span class="blind">아이디</span></label>
+                    <input type="text" id="id" placeholder="아이디입력">
+                </div>
+                <div class="row">
+                    <label for="pw" class="fas fa-lock"><span class="blind">비밀번호</span></label>
+                    <input type="password" id="pw" placeholder="비밀번호입력">
+                </div>
+                    <button type="submit">로그인</button>           
+            </form>
+
+            <div class="message">
+                <p>아직 회원가입을 안하셨나요?</p>
+                <a href="회원가입.html">회원가입하기</a>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
